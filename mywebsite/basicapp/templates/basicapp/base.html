@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Give Title</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/appstyle.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{% static "images/logo.png" %}" alt="logo Image"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url "basicapp:home" %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url "basicapp:about" %}">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url "basicapp:portfolio" %}">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url "basicapp:projects" %}">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url "basicapp:contacts" %}">Contacts</a>
+                </li>
+            </ul>
+          </div>
+      </div>
+
+    </nav>
+
+
+    {% block content %}
+    {% endblock content %}
+    <!--- Connect -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Connect</h2>
+
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook" ></i> </a>
+            <a href="#"><i class="fab fa-twitter" ></i> </a>
+            <a href="#"><i class="fab fa-google-plus-g" ></i> </a>
+            <a href="#"><i class="fab fa-instagram" ></i> </a>
+            <a href="#"><i class="fab fa-youtube" ></i> </a>
+
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="{% static "images/w3newbie.png" %}" alt="">
+            <hr class="light">
+            <p>555-555-555</p>
+            <p>email@myemail.com</p>
+            <p>100 Street Name</p>
+            <p>City, State, 00000</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Our Hours</h5>
+            <hr class="light">
+            <p>Monday: 9am-5pm</p>
+            <p>Sartuday: 10am-4pm</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Service Area</h5>
+            <hr class="light">
+            <p>City, State, 00000</p>
+            <p>City, State, 00000</p>
+            <p>City, State, 00000</p>
+            <p>City, State, 00000</p>
+
+          </div>
+
+          <div class="col-12">
+            <hr class="light-100">
+            <h5>&copy; w3newbie.com</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,97 @@
+{% extends "basicapp/base.html" %}
+{% load static %}
+{% block content %}
+
+<br>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+  <div class="card card-body h-100 border-info" id="profile-wrapper">
+    <img class="benny"src="{% static "images/bh.jpg" %}" alt="Oops! The image didnt load">
+    <hr>
+    <h4 class="card-title">Hi, I'm Benny!</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Python Developer</h6>
+    <p class="card-text">I love Programming, doing Research and Collaborating</p>
+  </div>
+</div>
+
+<div class="col-md-9">
+  <div class="card card-body h-100 border-info">
+            <h4>My First Job as a Developer</h4>
+            <hr>
+        <p>I started learning Programming in 2019. I learned Being a Full stack Web Developer using Django, JavaScript,
+           Python, SQLite Databases, DataScience-Data analysisand Data Visualization, HTML, CSS.</p>
+        <p>Later on, I learned skills such as web scrapping, crawling, indexing web pages and Automation.</p>
+        <p>My first job was creating a Desktop Bookstore GUI App with a Database, for keeping records of books and retrieving the records.
+           My newbie self was excited about this project and I learned a lot in the process.</p>
+        <p>I am someone who loves challenges and is eager to learn and improve in the process.</p>
+        <ul class="social-links">
+          <li><img class="social"src="{% static "images/facebookicon.png" %}" alt=""> </li>
+          <li><img class="social"src="{% static "images/githubicon.png" %}" alt=""> </li>
+          <li><img class="social"src="{% static "images/instagramicon.jpg" %}" alt=""> </li>
+          <li><img class="social"src="{% static "images/twitter.jpg" %}" alt=""> </li>
+          <li><img class="social"src="{% static "images/Linkedin Icon.jpg" %}" alt=""> </li>
+
+
+        </ul>
+  </div>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-md-6">
+  <div class="card card-body">
+        <h5>My Experience as a Developer</h5>
+        <hr>
+        <p>Full Stack Web Developer, Web Scrapping and Automation Expert.</p>
+        <p>I am website developer using Django: both front-end and back-end.
+          I can make Blog websites, Marketing Websites,
+           Portfolio Websites and Social Media Sites.</p>
+        <p> Also, I am a Scrapping
+       expert specialized in web scrapping, crawling,
+        data interpretation data analysis, data structures and indexing web pages with real-time data,
+         websites requiring authentication, business listings, e-commerce such as real-estate etc.</p>
+   </div>
+</div>
+<div class="col-md-6">
+  <div class="card card-body h-100">
+      <h5>What I know</h5>
+      <hr>
+      <p>Python, Django, HTML/CSS, JAVASCRIPT/Jquery,
+        Graphical User Interfaces(GUI) Apps, Web Scrapping, Automation,
+         SQLite Databases, DataScience-Data analysis and Data Visualization
+        and a whole bunch more I can't mention in one sentence!;)</p>
+      <p>PS: Working on Machine Learning.</p>
+  </div>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-md-6">
+  <div class="card card-body h-100">
+      <h5>How I learn</h5>
+      <hr>
+      <p>Reverse Engineer And Building Prototypes First.</p>
+      <p>I can learn about anything by having a final product to tear apart piece by piece.
+      I break code where I need to figure out why things work the way they do.
+      Documentation is a key referrence tool.</p>
+      <p>I strive to do my very best in every project.</p>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="card card-body h-100">
+        <h5>My short term goal</h5>
+        <hr>
+        <p>After almost one year of learning Python, Django and DataScience. I am ready to learn something new.
+        I'll collaborate and share ideas with others on stackoverflow and other platforms.</p>
+        <p>Aside from building Small Projects, I would love to be in a position
+           in which I am part of a bigger team and learn from others with
+           more experience than myself.</p>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+{% endblock content %}
